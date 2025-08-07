@@ -1,0 +1,31 @@
+<div #scrollContainer class="scroll-container">
+  <section #panel class="panel home-section" data-section="home">
+    <h1 class="title">Yoel Villa</h1>
+    <p class="subtitle">Full-Stack Web Developer • Rendimiento & Funcionalidad • Asturias, ES</p>
+    <scroll-btn (click)="scrollToNext()"></scroll-btn>
+  </section>
+
+  <section #panel class="panel" data-section="about">Sección 2
+
+    <scroll-btn (click)="scrollToNext()"></scroll-btn>
+  </section>
+  <section #panel class="panel" data-section="portfolio">Sección 3
+
+    <scroll-btn (click)="scrollToNext()"></scroll-btn>
+  </section>
+  <section #panel class="panel" data-section="contact">Sección 4
+
+
+  </section>
+</div>
+
+<nav>
+  <ul>
+    <li (click)="scrollToSection('home')" data-nav="home">Inicio</li>
+    <li (click)="scrollToSection('about')" data-nav="about">Sobre mí</li>
+    <li (click)="scrollToSection('portfolio')" data-nav="portfolio">Portfolio</li>
+    <li (click)="scrollToSection('contact')" data-nav="contact">Contact</li>
+  </ul>
+</nav>
+
+<custom-cursor (click)="scrollToNext()"></custom-cursor>

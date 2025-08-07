@@ -1,0 +1,29 @@
+.scroll-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  width: 64px;
+  height: auto;
+  transition: opacity 0.3s ease;
+  animation: heartbeat 1.6s ease-in-out infinite;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover {
+    opacity: 0.5;
+    transform: scale();
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
