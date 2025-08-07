@@ -27,13 +27,11 @@ ngAfterViewInit(): void {
   });
 
   const animate = () => {
-    // Círculo con poco delay
     circleX += (mouseX - circleX) * circleDelay;
     circleY += (mouseY - circleY) * circleDelay;
     cursor.style.left = `${circleX}px`;
     cursor.style.top = `${circleY}px`;
 
-    // Punto con más delay
     dotX += (mouseX - dotX) * dotDelay;
     dotY += (mouseY - dotY) * dotDelay;
     dot.style.left = `${dotX - circleX + 20}px`;
